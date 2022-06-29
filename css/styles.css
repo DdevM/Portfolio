@@ -1,0 +1,223 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://wallpaper.dog/large/5495309.png");
+  background-attachment: fixed;
+  background-position: center;
+  /* background-color: #152238; */
+}
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 200;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat";
+}
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #141414;
+  z-index: -10;
+  color: white;
+  text-align: center;
+  font-family: "Montserrat";
+  transition: all 0.5s;
+}
+.animate__animated.animate__backOutDown {
+  --animate-duration: 3s;
+}
+.animate__animated.animate__backInUp {
+  --animate-duration: 2s;
+}
+#Home {
+  background-size: cover;
+  color: white;
+}
+#HOME {
+  padding-top: 220px;
+}
+#social {
+  text-align: center;
+}
+#topname {
+  font-family: "Quicksand", sans-serif;
+  font-size: 48px;
+  padding-right: 5px;
+  line-height: 100px;
+}
+#topname-1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 60px;
+  letter-spacing: 2px;
+  line-height: 100px;
+  color: white;
+}
+#greet {
+  font-family: "Quicksand", sans-serif;
+  font-size: 48px;
+}
+#job {
+  font-family: "Quicksand", sans-serif;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+#job-1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 38px;
+  letter-spacing: 2px;
+  color: #e30846;
+}
+#portfolio {
+  width: 300px;
+  height: 300px;
+}
+#About {
+  /* background-image: linear-gradient(to top, #014073, #113663, #162c52, #162343, #141a34); */
+  padding-top: 100px;
+  color: white;
+}
+#ContactButton {
+  padding: 10px 12px;
+  width: 8em;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  border-radius: 14px;
+  border: 0.4px;
+  box-shadow: 1.5px 1.5px 4px 4px grey;
+}
+#ContactButton:hover {
+  background-color: grey;
+  color: white;
+  box-shadow: 1.5px 1.5px 4px 4px white;
+}
+.ps {
+  margin-top: 100px;
+}
+.ap-1 {
+  font-size: 21px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+.ap-1-1 {
+  font-size: 16px;
+  font-family: "Montserrat";
+}
+.ap-2 {
+  font-size: 24px;
+  text-align: center;
+  padding-left: 10px;
+  font-family: "Montserrat";
+}
+.ap-2-1 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+#Resume {
+  /* background-image: linear-gradient(to bottom, #101529, #11162c, #12182e, #131931, #141a34); */
+  margin: 20px;
+  color: white;
+}
+hr {
+  width: 4%;
+  border: none;
+  border-style: dotted;
+  border-top: 15px;
+  border-width: 7px;
+  border-spacing: 7px;
+  color: grey;
+}
+#Project {
+  margin: 20px;
+  /* background-image: linear-gradient(to bottom, #2a3260, #242c55, #1e264a, #19203f, #141a34); */
+  color: white;
+}
+#Contact {
+  /* background-image: linear-gradient(to bottom, #27305b, #222a51, #1d2547, #191f3d, #141a34); */
+  color: white;
+}
+.box {
+  background-color: #040000;
+  box-shadow: 5px 10px 20px 8px grey;
+  margin: 20px;
+  width: 18rem;
+  border-radius: 10px;
+}
+.desc {
+  font-family: "Montserrat";
+}
+.titli {
+  font-family: "Teko", sans-serif;
+  font-size: 28px;
+}
+.titli1 {
+  font-family: "Teko", sans-serif;
+  font-size: 12px;
+}
+.details {
+  display: flex;
+}
+#phone {
+  margin-right: 20px;
+}
+#email {
+  margin-right: 20px;
+}
+@media screen and (max-width: 575px) {
+  #HOME {
+    padding-top: 160px;
+  }
+  #topname {
+    font-size: 36px;
+    line-height: 60px;
+    padding-left: 10px;
+  }
+  #topname-1 {
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 10px;
+  }
+  #job {
+    font-size: 26px;
+  }
+  #job-1 {
+    font-size: 32px;
+  }
+  #greet {
+    font-size: 30px;
+  }
+  #job {
+    font-size: 22px;
+  }
+  #portfolio {
+    width: 200px;
+    height: 200px;
+  }
+  #WE {
+    width: 40%;
+    height: 40%;
+  }
+  .details {
+    display: block;
+  }
+  /* #splash{
+    height: 300px;
+    background-image: url("images/sections/mobile.gif");
+  } */
+  #phone {
+    margin-right: 150px;
+  }
+}
