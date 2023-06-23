@@ -1,590 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="portfolio, flutter developer, mobile engineer"
-    />
-    <meta name="author" content="dibyanshu" />
 
-    <title>Dibyanshu Mohanty</title>
+<head>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77850754-2"></script> -->
+    <script async src="js/ga.js"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="DcodeM" data-description="Support me on Buy me a coffee!" data-message="Please buy me a coffee, if you love my work !" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <!-- <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3LZ29H"
+                height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript> -->
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/unicons.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/tooplate-style.css" />
-    <link
-      rel="shortcut icon"
-      href="images/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-  </head>
-  <body>
-    <!-- MENU -->
-    <nav class="navbar navbar-expand-sm navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><i class="uil uil-user"></i>Dibyanshu</a
-        >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon" />
+    <meta name="keywords" content="">
+    <meta name="author" content="Dibyanshu Mohanty">
+    <meta name="image" property="og:image" content="images/preview.png">
+    <meta name="description" property="og:description" content="I am a Mobile Engineer currently working at MoMoney and I love building quality problem driven scalable software products.">
+    <meta name="title" property="og:title" content="Dibyanshu Mohanty">
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <title lang="en" class="en">Dibyanshu Mohanty</title>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a href="#about" class="nav-link"
-                ><span data-hover="About">About</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#project" class="nav-link"
-                ><span data-hover="Projects">Projects</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#skills" class="nav-link"
-                ><span data-hover="Skills">Skills</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#resume" class="nav-link"
-                ><span data-hover="Resume">Resume</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link"
-                ><span data-hover="Contact">Contact</span></a
-              >
-            </li>
-          </ul>
+    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="css/simple-sidebar.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link href="css/bootstrap-utilities.css" rel="stylesheet">
+</head>
 
-          <ul class="navbar-nav ml-lg-auto">
-            <div class="ml-lg-4">
-              <div
-                class="color-mode d-lg-flex justify-content-center align-items-center"
-              >
-                <i class="color-mode-icon"></i>
-                Color mode
-              </div>
+<body class="bg">
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="d-flex toggled" id="wrapper">
+        <div class="bg-dark border-right" id="sidebar-wrapper">
+            <br>
+            <a href="#" class="sidebar-close">
+                <div class="sidebar-heading fa fa-times"></div>
+            </a>
+            <div class="list-group" id="menu">
+                <div class="en">
+                    <div class="nav">
+                        <a lang="en" onclick="event.preventDefault()" href="#home" class="home-nav page-scroll list-group-item list-group-item-action bg-dark active">HOME</a>
+                        <a lang="en" onclick="event.preventDefault()" href="#about" class="about-nav page-scroll list-group-item list-group-item-action bg-dark">ABOUT</a>
+                        <a lang="en" onclick="event.preventDefault()" href="#skills" class="skills-nav page-scroll list-group-item list-group-item-action bg-dark">SKILLS</a>
+                        <a lang="en" onclick="event.preventDefault()" href="#blogs" class="blogs-nav page-scroll list-group-item list-group-item-action bg-dark">BLOGS</a>
+                        <a lang="en" onclick="event.preventDefault()" href="#contact" class="contact-nav page-scroll list-group-item list-group-item-action bg-dark">CONTACT</a>
+                    </div>
+                </div>
             </div>
-          </ul>
+            <div class="copyright">
+                <p lang="en" class="en"><span class="fa fa-copyright"></span> &nbsp;Dibyanshu Mohanty 2022</p>
+            </div>
         </div>
-      </div>
-    </nav>
-
-    <!-- ABOUT -->
-    <section
-      class="about full-screen d-lg-flex justify-content-center align-items-center"
-      id="about"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-            <div class="about-text">
-              <small class="small-text"
-                >Welcome to
-                <span class="mobile-block">my portfolio website!</span></small
-              >
-              <h1 class="animated animated-text">
-                <span class="mr-2">Hey folks, I'm</span>
-                <div class="animated-info">
-                  <span class="animated-item">Mobile Dev</span>
-                  <span class="animated-item">Product Thinker</span>
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-dark fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header page-scroll">
+                        <button id="menu-toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu fa fa-bars"></span>
+                    </button>
+             
+                    </div>
                 </div>
-              </h1>
-
-              <p>
-                Building a successful product is always full of obstacles. I
-                specialize in building great user experiences for products
-                across platforms using Flutter.
-              </p>
-              <div class="custom-btn-group mt-4">
-                <a
-                  href="https://drive.google.com/file/d/1-gjbzK979v9bgpuS9K38wFg9VgPvn2hZ/view?usp=sharing"
-                  class="btn custom-btn custom-btn-bg custom-btn-link"
-                  ><i class="uil uil-file-alt"></i> Download Resume</a
-                >
-              </div>
+            </nav>
+            <div class="scroll-container">
+                <section id="home">
+                    <div class="container-fluid bg">
+                        <div class="home">
+                            <div id="intro">
+                                <div class="en">
+                                    <h1 lang="en"><span class="primary">Hello</span><span class="comma primary">,</span></h1>
+                                    <h1 lang="en">I'm <span class="secondary">Dibyanshu</span><span class="comma secondary">,</span></h1>
+                                    <h1 lang="en"><span class="primary dev">Product</span> Engineer.
+                                        <h1>
+                                            <h2 lang="en">Full Stack Mobile Engineer / Product Tinkerer</h2>
+                                </div>
+                                <div class="social">
+                                    <!-- <a href="#" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Email"><span
+                                        class="fa fa-envelope-open-text"></span></a> -->
+                                    <a href="https://www.linkedin.com/in/dibyanshu-mohanty" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Linkedin"><span
+                                        class="fa fa-linkedin-square"></span></a>
+                                    <a href="https://twitter.com/DcodeM" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Twitter"><span
+                                        class="fa fa-twitter"></span></a>
+                          
+                                    <a href="https://github.com/dibyanshu-mohanty" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Github"><span
+                                        class="fa fa-github-alt"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="next-page">
+                                <p class="down-arrow-text">SCROLL DOWN</p>
+                                <div class="down-arrow-icon"><span class="fa fa-chevron-down"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="about">
+                    <span class="title en" lang="en">about me</span>
+                    <h2 class="subtitle en" lang="en">Experience</h2>
+                    <div class="row experience">
+                        <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 amazon-sde2 box">
+                            <h4 lang="en">Mobile Engineer</h4>
+                            <h6 lang="en">MoMoney</h6>
+                            <div class="blob green inline-block"></div>
+                            <p class="duration inline-block" lang="en">Apr, 2023 - Current</p>
+                            <p class="description" lang="en">
+                                Building Seamless Experiences for Fintech at scale
+                            </p>
+                        </div>
+                        <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 scaler-writer box no-border">
+                            <h4 lang="en">SDE Intern</h4>
+                            <h6 lang="en">Zapit.io</h6>
+                           
+                            <p class="duration inline-block" lang="en">Sep, 2022 - Apr, 2023</p>
+                            <p class="description" lang="en">
+                                Shipped integral features to prod with maintained clean code structure and design patterns to induce seamless user experience.
+                            </p>
+                        </div>
+                        <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 optum-se box no-border">
+                            <h4 lang="en">Product Engineer</h4>
+                            <h6 lang="en">Stealth Startup</h6>
+                            <p class="duration" lang="en">Dec, 2022 - Apr, 2023</p>
+                            <p class="description" lang="en">
+                                Worked on building and scaling the product from scratch involving a Zero to One thinking and ideation.
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="experience row">
+                        <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 optum-ase box">
+                            <h4>Mobile Engineer Intern</h4>
+                            <h6>Yaropay</h6>
+                            <p class="duration">Jun, 2022 - Aug, 2022</p>
+                            <p class="description">
+                                Took ownership of the frontend of product for scale, as well as played a key role in shaping an effective PMF for the product followed by a pitch to the initial investors.
+                            </p>
+                        </div>
+                        <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 abco-intern box no-border">
+                            <h4 lang="en">Flutter Intern</h4>
+                            <h6 lang="en">Avalor</h6>
+                            <p class="duration" lang="en">Dec, 2021 - Feb, 2022</p>
+                            <p class="description" lang="en">
+                                Built multiple Frontend PWAs for clients and integrated blockchain APIs to build MVPs for initial growth of the products
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="subtitle en" lang="en">Education</h2>
+                    <div class="row education">
+                        <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 college box">
+                            <h4 lang="en">B.Tech, EEE</h4>
+                            <h6 lang="en">Vellore Institute of Technology</h6>
+                            <div class="blob green inline-block"></div>
+                            <p class="duration inline-block" lang="en">2020 - Current</p>
+                            <p class="description" lang="en">
+                                8.79 CGPA<br>Organizer of SELECT Makeathon<br> Winner of 2x Hackathons
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills">
+                    <span class="title en" lang="en">my skills</span>
+                    <h2 class="subtitle en" lang="en">Skills</h2>
+                    <div class="row skill flutter">
+                        <div class="row">
+                            <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8" lang="en">
+                                Flutter
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row skill dart">
+                        <div class="row">
+                            <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8" lang="en">
+                                Dart
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row skill firebase">
+                        <div class="row">
+                            <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8" lang="en">
+                                Firebase
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row skill javascript">
+                        <div class="row">
+                            <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8" lang="en">
+                                JavaScript
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row skill python">
+                        <div class="row">
+                            <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8" lang="en">
+                                Python
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row skill react">
+                        <div class="row">
+                            <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8" lang="en">
+                                React
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row skill django">
+                        <div class="row">
+                            <div class="en col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8" lang="en">
+                                Django
+                               
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                     
+                </section>
+                <section id="blogs">
+                    <span class="title en" lang="en">my builds</span>
+                    <h2 class="subtitle en" lang="en">Projects</h2>
+                    
+                    <div class="row blogs">
+                        <br>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 blog box no-border no-padding">
+                            <a href="https://github.com/dibyanshu-mohanty/Surakshaan" target="_blank">
+                                
+                                <div class="content">
+                                    <h5>Surakshaan</h5>
+                                    <p class="pub-date">Flutter | Firebase</p>
+                                    <p class="description">Personal Safety App Built for Sheer Safety and Help</p>
+                                    
+                                </div>
+                                
+                                    <h10 class="link">github</h10><span class="fa fa-link" style="height: 12px;width: 10px;padding-left: 5px;padding-bottom: 1rem;"></span>
+                                <div style="padding-bottom: 1rem;"></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 blog box no-border no-padding">
+                            <a href="https://github.com/dibyanshu-mohanty/Empowher" target="_blank">
+                                
+                                <div class="content">
+                                    <h5>Empowher</h5>
+                                    <p class="pub-date">Flutter | OpenAI</p>
+                                    <p class="description">An AI-Powered Women's Awareness Platform</p>
+                                    
+                                </div>
+                                
+                                    <h10 class="link">github</h10><span class="fa fa-link" style="height: 12px;width: 10px;padding-left: 5px;padding-bottom: 1rem;"></span>
+                                <div style="padding-bottom: 1rem;"></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 blog box no-border no-padding">
+                            <a href="https://github.com/dibyanshu-mohanty/HelpInBlood" target="_blank">
+                                
+                                <div class="content">
+                                    <h5>HelpInBlood</h5>
+                                    <p class="pub-date">Flutter | Firebase</p>
+                                    <p class="description">Your Pocket Friendly Go to Blood Bank</p>
+                                    
+                                </div>
+                                
+                                    <h10 class="link">github</h10><span class="fa fa-link" style="height: 12px;width: 10px;padding-left: 5px;padding-bottom: 1rem;"></span>
+                                <div style="padding-bottom: 1rem;"></div>
+                            </a>
+                        </div>
+                        <br>
+                        
+                    </div>
+                    <br>
+                    <div class="row blogs">
+                        <br>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 blog box no-border no-padding">
+                            <a href="https://github.com/dibyanshu-mohanty/Electrifi" target="_blank">
+                                
+                                <div class="content">
+                                    <h5>Electrifi</h5>
+                                    <p class="pub-date">Arduino | Firebase</p>
+                                    <p class="description">Automation tool to empower your house with daily needs</p>
+                                    
+                                </div>
+                                
+                                    <h10 class="link">github</h10><span class="fa fa-link" style="height: 12px;width: 10px;padding-left: 5px;padding-bottom: 1rem;"></span>
+                                <div style="padding-bottom: 1rem;"></div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 blog box no-border no-padding">
+                            <a href="https://github.com/dibyanshu-mohanty/Newsera" target="_blank">
+                                
+                                <div class="content">
+                                    <h5>Newsera</h5>
+                                    <p class="pub-date">Flutter | Inshorts API</p>
+                                    <p class="description">Your daily news application but with no ads and crap</p>
+                                    
+                                </div>
+                                
+                                    <h10 class="link">github</h10><span class="fa fa-link" style="height: 12px;width: 10px;padding-left: 5px;padding-bottom: 1rem;"></span>
+                                <div style="padding-bottom: 1rem;"></div>
+                            </a>
+                        </div>
+                      
+                        <br>
+                        
+                    </div>
+                    <br>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 my-auto view-more">
+                        <a lang="en" class="en" href="https://github.com/dibyanshu-mohanty" target="_blank">
+                            <button class="btn btn-primary view-more-articles">See more&nbsp;&nbsp;&nbsp;<span
+                                class="fa fa-external-link-square"></span></button>
+                        </a>
+                    </div>
+                  
+                </section>
+                <section id="contact">
+                    <span class="title en" lang="en">contact</span>
+                    <h2 class="subtitle en" lang="en">Contact</h2><br>
+                    <form method="post" action="https://formspree.io/f/xleyrrvq" class="en form-group col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                        <input id="name" class="form-control en" name="Name" type="text" placeholder="Name" lang="en" required/>
+                        <input id="email" class="form-control en" name="Email" type="email" placeholder="Email" lang="en" required/>
+                        <textarea id="message" row="10" name="Message" class="form-control en" placeholder="Message" lang="en" required></textarea>
+                        <input type="hidden" name="_next" value="#contact" />
+                        <input type="hidden" name="_subject" value="New Message" />
+                        <button id="submit" class="btn en" type="submit" lang="en">Submit</button>
+                    </form>
+                </section>
             </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12 col-12">
-            <div class="about-image svg">
-              <img
-                src="images/undraw/software_dev.svg"
-                class="img-fluid"
-                alt="svg image"
-              />
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
+    <script src="js/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.easing.min.js" crossorigin="anonymous"></script>
+    <script src="js/fontawesome5.min.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" crossorigin="anonymous"></script>
+</body>
 
-    <!-- PROJECTS -->
-    <section class="project py-5" id="project">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-11 text-center mx-auto col-12">
-            <div class="col-lg-8 mx-auto">
-              <h2>Products I have Ideated and Built</h2>
-            </div>
-
-            <div class="owl-carousel owl-theme">
-              <div class="item">
-                <div class="project-info">
-                  <a href="https://github.com/dibyanshu-mohanty/Surakshaan">
-                    <img
-                      src="images/project/Surakshaan.png"
-                      class="img-fluid px-5 py-5"
-                      alt="project image"
-                  /></a>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="project-info">
-                  <a href="https://github.com/dibyanshu-mohanty/HelpInBlood">
-                    <img
-                      src="images/project/HelpinBlood.png"
-                      class="img-fluid px-5 py-5"
-                      alt="project image"
-                  /></a>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="project-info">
-                  <a href="https://github.com/dibyanshu-mohanty/Thingify">
-                    <img
-                      src="images/project/Thingify.png"
-                      class="img-fluid px-5 py-5"
-                      alt="project image"
-                  /></a>
-                </div>
-              </div>
-
-              <div class="item">
-                <div class="project-info">
-                  <a href="https://github.com/dibyanshu-mohanty/Newsera">
-                    <img
-                      src="images/project/Newsera.png"
-                      class="img-fluid px-5 py-5"
-                      alt="project image"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2>Skills</h2>
-      </div>
-      <div class="py-5 d-lg-flex justify-content-center align-items-center">
-        <div class="col-lg-6 col-lg-8 skills">
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="logos:flutter"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>Flutter</h5>
-          </li>
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="vscode-icons:file-type-dartlang"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>Dart</h5>
-          </li>
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="logos:firebase"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>Firebase</h5>
-          </li>
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="vscode-icons:file-type-js-official"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>JavaScript</h5>
-          </li>
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="logos:react"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>ReactJS</h5>
-          </li>
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="logos:bootstrap"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>Bootstrap</h5>
-          </li>
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="vscode-icons:file-type-django"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>Django</h5>
-          </li>
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="logos:python"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>Python</h5>
-          </li>
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="vscode-icons:file-type-cpp3"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>C++</h5>
-          </li>
-        
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="logos:git"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>Git</h5>
-          </li>
-          <li class="row py-2 px-4">
-            <span
-              class="iconify"
-              data-icon="mdi:android-studio"
-              data-inline="false"
-              width="30"
-              height="30"
-            ></span>
-            <h5>Studio</h5>
-          </li>
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section
-      class="resume py-5 d-lg-flex justify-content-center align-items-center"
-      id="resume"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-12">
-            <h2 class="mb-4">Experiences</h2>
-
-            <div class="timeline">
-              <div class="timeline-wrapper">
-                <div class="timeline-yr">
-                  <span>Present</span>
-                </div>
-                <div class="timeline-info">
-                  <h3><span>Engineering</span><small>MoMoney</small></h3>
-                  <p>
-                    Working in the Mobile engineering team of MoMoney to build core User experience design of the application using
-                    Flutter micro frameworks.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-wrapper">
-                <div class="timeline-yr">
-                  <span>2023</span>
-                </div>
-                <div class="timeline-info">
-                  <h3><span>SDE Intern</span><small>Zapit.io</small></h3>
-                  <p>
-                    Shipping features and implementating the UI components
-                    direct from Figma to Flutter seamlessly and contributing to
-                    the Technical product documentation.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-wrapper">
-                <div class="timeline-yr">
-                  <span>2023</span>
-                </div>
-                <div class="timeline-info">
-                  <h3><span>Engineering Lead</span><small>Maze</small></h3>
-                  <p>
-                    Lead the Engineering team at Maze Finance, working on building the core tech product at Maze and responsible to
-                    maintaining clean code standards and industrial standards.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-wrapper">
-                <div class="timeline-yr">
-                  <span>2022</span>
-                </div>
-                <div class="timeline-info">
-                  <h3>
-                    <span>Mobile App Developer</span><small>Yaropay</small>
-                  </h3>
-                  <p>
-                    Took ownership of the frontend of product and delivered
-                    updates within deadlines, as well as played a key role in
-                    shaping an effective PMF for the product followed by a pitch
-                    to the initial investors.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-wrapper">
-                <div class="timeline-yr">
-                  <span>2021</span>
-                </div>
-                <div class="timeline-info">
-                  <h3>
-                    <span>Technical Content Writer</span
-                    ><small>Python Shiksha</small>
-                  </h3>
-                  <p>
-                    As a freelance writer at the organisation, my responsibility
-                    was to develop unique and high grade quality content for
-                    blogs that majorly contained solutions to various indepth
-                    concepts of python.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-12">
-            <h2 class="mb-4 mobile-mt-2">Educations</h2>
-
-            <div class="timeline">
-              <div class="timeline-wrapper">
-                <div class="timeline-yr">
-                  <span>Present</span>
-                </div>
-                <div class="timeline-info">
-                  <h3><span>B.Tech EEE</span><small>VIT, Vellore</small></h3>
-                  <p>
-                    Studying Undergraduate degree in Electrical and Electronics
-                    Engineering with a CGPA of 8.9 and a SGPA of 8.8 and well
-                    versed in building solutions using RPi, 8051 uC and Arduino.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-wrapper">
-                <div class="timeline-yr">
-                  <span>2020</span>
-                </div>
-                <div class="timeline-info">
-                  <h3>
-                    <span>Senior Secondary</span
-                    ><small>Mother's Public School</small>
-                  </h3>
-                  <p>
-                    Graduated Senior Secondary schooling under CBSE board with
-                    93.4% in PCM-CS stream.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-wrapper">
-                <div class="timeline-yr">
-                  <span>2018</span>
-                </div>
-                <div class="timeline-info">
-                  <h3>
-                    <span>Secondary</span
-                    ><small>St. Xavier's High School</small>
-                  </h3>
-                  <p>
-                    Graduated Secondary schooling under CBSE board with 96% and
-                    also participated in multiple Quiz and Science Expos and
-                    represented the school on State level.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact py-5" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 mr-lg-5 col-12">
-            <div class="google-map w-100">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14969.344969535743!2d85.80390677796615!3d20.286344859264855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1909d626fffc1d%3A0xe19f5ac0b78f8e62!2sNayapalli%2C%20Bhubaneswar%2C%20Odisha!5e0!3m2!1sen!2sin!4v1668767074504!5m2!1sen!2sin"
-                loading="lazy"
-                width="400"
-                height="300"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <div
-              class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5"
-            >
-              <div class="contact-info-item">
-                <h3 class="mb-3 text-white">Drop a Hi</h3>
-                <p>
-                  <a href="mailto:dibyanshu.m2002@gmail.com"
-                    >dibyanshu.m2002@gmail.com</a
-                  >
-                </p>
-              </div>
-
-              <ul class="social-links">
-                <li>
-                  <a href="https://www.linkedin.com/in/dibyanshu-mohanty"
-                    ><i class="fa-brands fa-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/DcodeM"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://github.com/dibyanshu-mohanty"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-6 col-12">
-            <div class="contact-form">
-              <h2 class="mb-4">Want to have a chat?</h2>
-
-              <form action="" method="get">
-                <div class="row">
-                  <div class="col-lg-6 col-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="name"
-                      placeholder="Your Name"
-                      id="name"
-                    />
-                  </div>
-
-                  <div class="col-lg-6 col-12">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      placeholder="Email"
-                      id="email"
-                    />
-                  </div>
-
-                  <div class="col-12">
-                    <textarea
-                      name="message"
-                      rows="6"
-                      class="form-control"
-                      id="message"
-                      placeholder="Message"
-                    ></textarea>
-                  </div>
-
-                  <div class="ml-lg-auto col-lg-5 col-12">
-                    <input
-                      type="submit"
-                      class="form-control submit-btn"
-                      value="Send"
-                    />
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-12">
-            <p class="logo-text text-center">Made With 💖 by Dibyanshu</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
 </html>
