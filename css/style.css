@@ -371,6 +371,12 @@ span.title {
     border-left: solid 5px var(--secondary);
 }
 
+.blog-box {
+    background-color: #1f1f1f;
+    padding: 2em 2em !important;
+    border-left: solid 5px var(--secondary);
+}
+
 .scaler-blogs .box {
     border-radius: 0;
     border-left: solid 5px var(--secondary);
@@ -537,9 +543,9 @@ button {
     transform: translate(30px, 30px);
 }
 
-.optum-se,
-.abco-intern,
-.scaler-writer {
+.zapit-sde,
+    .product-stealth,
+    .avalor-intern {
     margin-left: 30px;
 }
 
@@ -602,11 +608,6 @@ button {
     background: linear-gradient(to right, var(--primary) 50%, #222222 40%);
 }
 
-
-#blogs img {
-    width: 100%;
-}
-
 #blogs .content {
     padding: 1rem 1.2rem 0rem 1.2rem;
 }
@@ -624,14 +625,10 @@ form {
 
 .blog {
     margin-right: 30px;
-    border-radius: 7px;
+
     transition: box-shadow 0.5s ease-in-out;
 }
 
-.blog img {
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-}
 
 .blog:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.05);
@@ -717,10 +714,9 @@ form {
 }
 
 @media (max-width: 1200px) {
-    .optum-ase,
-    .optum-se,
-    .scaler-writer,
-    .abco-intern {
+    .zapit-sde,
+    .product-stealth,
+    .avalor-intern {
         margin-left: 0px;
         margin-top: 20px !important;
         border-left: solid 5px var(--secondary);
@@ -830,8 +826,8 @@ form {
     #contact .subtitle {
         font-size: 2.5rem !important;
     }
-    .optum-ase,
-    .optum-se {
+    .zapit-sde,
+    .product-stealth {
         margin-left: 0px;
         margin-top: 20px !important;
         border-left: solid 5px var(--secondary);
